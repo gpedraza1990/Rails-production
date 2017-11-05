@@ -1,12 +1,12 @@
 class Recipe
   include HTTParty
-  base_uri 'www.google.com'
+  base_uri 'google.com'
   key_value = ENV['FOOD2FORK_KEY']
   
-  format  :json
+  format  :html
 
   def self.for term
-    get("")["elemnts"]
+    get("")
   end
 
 end
