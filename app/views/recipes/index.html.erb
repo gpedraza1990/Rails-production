@@ -12,8 +12,8 @@
     <td>
       <%= link_to image_tag(recipe["image_url"], size: "100"), 	recipe["source_url"]  %>
     </td>
-     <%= sanitize("<td>  #{link_to recipe['title'], recipe['source_url']} %></td>", tags: %w(td,a)) %>
-    <td><%= recipe['social_rank']  %></td>
+     <%= sanitize("<td>  #{link_to recipe['title'], recipe['source_url']} </td>", tags: %w(td,a)) %>
+    <td><%= recipe["social_rank"]  %></td>
   </tr>
   <% end %>
 </table>
