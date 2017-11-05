@@ -1,7 +1,7 @@
 require 'capybara'
 Capybara.default_driver = :poltergeist
 
-Capybara.app_host = "http://localhost:3000"
+Capybara.app_host = "https://shrouded-temple-59789.herokuapp.com"
 
 describe "Recipes App" do
   it "displays 'Kahlúa-Spiked' when request parameter 'search' is mocha" do

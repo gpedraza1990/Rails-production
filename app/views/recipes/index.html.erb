@@ -14,6 +14,7 @@
     </td>
      <% link=link_to recipe["title"], recipe["source_url"] %>
      <%= sanitize("<td>#{link} </td>", tags: %w(td a)) %>
+    <td><%= recipe["title"]  %></td>
     <td><%= recipe["social_rank"]  %></td>
   </tr>
   <% end %>
