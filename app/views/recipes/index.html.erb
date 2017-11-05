@@ -6,9 +6,10 @@
     <th> Title </th>	
     <th> Rank </th>	
   </tr>
-  <%= @recipes %>
+  <%= @recipes.request.last_uri.to_s %>
+  <% @recipes.each do |recipe| %>
   <tr>
-    
+    <%= recipe %>
   </tr>
-  <% %>
+  <% end %>
 </table>
