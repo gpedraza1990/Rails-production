@@ -9,9 +9,13 @@
   </tr>
   <% @recipes.each do |recipe| %>
   <tr>
-    <td><%= image_tag(recipe["image_url"]) %></td>
-      <td><%= recipe["title"]%></td>
-      <td><%= recipe["social_rank"]%></td>
+    <td>
+      <%= link_to  href: recipe["source_url"] do %>
+      <%= image_tag(recipe["image_url"], size: "100") %>
+      <% end %>
+    </td>
+    <td><%= recipe["title"]%></td>
+    <td><%= recipe["social_rank"]%></td>
   </tr>
   <% end %>
 </table>
