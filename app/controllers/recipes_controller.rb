@@ -1,5 +1,7 @@
 class RecipesController < ApplicationController
   def index
-    @recipe=Recipe.new	
+    $search_term='jhu'
+    
+    @recipes = Recipe.for($search_term)	
   end
 end
