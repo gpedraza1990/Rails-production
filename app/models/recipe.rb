@@ -1,6 +1,7 @@
 class Recipe
   include HTTParty
-  base_uri 'https://api.coursera.org/api/catalog.v1/courses'
+  base_uri 'www.food2fork.com/api/'
+  key_value = ENV['FOOD2FORK_KEY']
   default_params fields: "smallIcon,shortDescription", q: "search"
   format  :json
 
