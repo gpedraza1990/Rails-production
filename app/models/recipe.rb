@@ -1,6 +1,6 @@
 class Recipe
 
-  include HTTParty
+  require 'httparty'
   default_params  q: "search"
   format  :json
   key_value = ENV['FOOD2FORK_KEY']
