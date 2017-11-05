@@ -7,7 +7,7 @@ class Recipe
   base_uri "https://api.coursera.org/api/catalog.v1/courses"
     
   def self.for term
-    get("",query: { query: term})["elements"]
+    get("+",query: { query: term})["elements"]
   end
 
 end
