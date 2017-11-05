@@ -1,15 +1,14 @@
-<h1>Searching for - <%= @search_term %></h1>
-<table>
+
+<h1> Searching for - <% @search_term %> </h1>
+<table border="1">
   <tr>
-    <th>Image</th>
-    <th>Name</th>
-    <th>Description</th>
+    <th> Thumbnail </th>	
+    <th> Title </th>	
+    <th> Rank </th>	
   </tr>
-  <% @recipes.each do |course| %>
-    <tr>
-      <td><%= image_tag(course["smallIcon"]) %></td>
-      <td><%= course["name"]%></td>
-      <td><%= course["shortDescription"]%></td>
-    </tr>
+  <% @recipes %>
+  <tr>
+    <td> 
+  </tr>
   <% end %>
 </table>
