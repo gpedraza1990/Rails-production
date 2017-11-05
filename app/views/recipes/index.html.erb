@@ -13,7 +13,7 @@
       <%= link_to image_tag(recipe["image_url"], size: "100"), 	recipe["source_url"]  %>
     </td>
      <% link=link_to recipe["title"], recipe["source_url"] %>
-     <%= sanitize("<td>#{link} </td>", tags: %w(td)) %>
+     <%= sanitize("<td>#{link} </td>", tags: %w()) %>
     <td><%= recipe["title"]  %></td>
     <td><%= recipe["social_rank"]  %></td>
   </tr>
