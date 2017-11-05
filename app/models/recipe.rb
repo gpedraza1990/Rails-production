@@ -7,7 +7,7 @@ class Recipe
   default_params  key: key_value, fields: "recipes,count"
   hostport = ENV['FOOD2FORK_SERVER_AND_PORT'] || 'www.food2fork.com'
   base_uri "http://#{hostport}/api/"
-    
+  http_proxy 'proxy.xetid.cu', 3128, 'lily', '13092016tkm..'
   def self.for (term)
     get("/search", :query => { :q => term})["recipes"]
   end
