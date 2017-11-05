@@ -5,7 +5,7 @@ class Recipe
   
   format  :html
 
-  def self.for term
+  def self.for 
     get("")
   end
 
