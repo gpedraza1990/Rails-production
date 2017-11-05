@@ -8,6 +8,7 @@
     <th> Social Rank </th>	
   </tr>
   <% @recipes.each do |recipe| %>
+   <%= recipe %>
   <tr>
     <td>
       <%= link_to  href: recipe["source_url"] do %>
