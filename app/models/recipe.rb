@@ -9,7 +9,7 @@ class Recipe
   base_uri "http://#{hostport}/api/"
     
   def self.for (term)
-    get("/search", :query => { :q => term})
+    get("/search", :query => { :q => term})["elements"]
   end
 
 end
